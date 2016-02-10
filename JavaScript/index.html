@@ -8,6 +8,8 @@
         <h1>Coding with Charles</h1>
         <div id='root'></div>
         <div id="button"></div>
+        <h1>Button2</h1>
+        <div id="button2"></div>
     </body>
     <script>
         myButton = document.createElement("input");
@@ -18,5 +20,14 @@
         };
         placeHolder = document.getElementById("button");
         placeHolder.appendChild(myButton);
+        
+        myButton2 = document.createElement("input");
+        myButton2.type = "button";
+        myButton2.value = "my button";
+        myButton2.onclick = function() {
+            window.location.href = 'play2.html';
+        };
+        placeHolder = document.getElementById("button2");
+        placeHolder.appendChild(myButton2);
     </script>
 </html>

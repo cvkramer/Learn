@@ -2,19 +2,20 @@
     <head>
         <title>Charles' Playpen</title>
         <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
-        <script src='data.js'></script>
         <script src='button.js'></script>
     </head>
     <body>
         <h1>Charles likes Java(Script)</h1>
         <h1>Now we make the button .js external</h1>
         <div id='root'></div>
+
         <div id='button'></div>
+        <h1>.... or not</h1>
     </body>
     <script>
     console.log('onload');
     $.ajax({
-        url: 'http://localhost:8000/data.JSON',
+        url: 'http://localhost:8000/Data/data.JSON',
         crossDomain: true,
         method: 'get',
         success: function(rsp) {
