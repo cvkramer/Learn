@@ -12,24 +12,4 @@
         <div id='button'></div>
         <h1>.... or not</h1>
     </body>
-    <script>
-    console.log('onload');
-    $.ajax({
-        url: 'http://localhost:8000/Data/data.JSON',
-        crossDomain: true,
-        method: 'get',
-        success: function(rsp) {
-                    loadData(rsp); 
-                }
-    });
-
-    function loadData(json) {
-        // read the json blob and do stuff
-        console.log('data is loaded!');
-        console.log(json);
-        var test = json;
-        console.log(test);
-        //var rootDiv = document.getElementById('root');
-    }
-    </script>
 </html>
